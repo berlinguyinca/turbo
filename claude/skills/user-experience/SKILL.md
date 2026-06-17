@@ -9,7 +9,7 @@ Apply this lens to any user-facing change, both before committing to an approach
 
 Lead with the user's goal rather than a list of surface fixes. A pile of small corrections ("relabel this", "move that") is a sign the underlying flow was never examined. Start from intent and work down to detail.
 
-**Scope:** this lens covers whether a change serves the user and whether the path through it is coherent. Visual and aesthetic craft — typography, color, spacing, motion polish — is a separate concern and stays out of scope here.
+**Scope:** this lens covers whether a change serves the user and whether the path through it is coherent — including whether that path holds for people who rely on the keyboard or assistive technology. Visual and aesthetic craft — typography, color, spacing, motion polish — is a separate concern and stays out of scope here.
 
 ## Understanding
 
@@ -35,4 +35,24 @@ Trace the path the user takes from end to end.
 - Follow the full journey: how the user arrives, the change itself, and what happens after.
 - Walk the unhappy paths: empty states, errors, interruptions, first-time versus returning use.
 - Confirm the user always knows what just happened and what to do next.
+- Confirm the path holds for users navigating by keyboard or assistive technology, not only by pointer and sight — a step they cannot reach or perceive is a broken step, not a polish item.
 - Surface friction: redundant steps, dead ends, and points where the user must hold state in their head.
+
+## Red flags
+
+Signals that a change has a problem worth raising, across all three contexts:
+
+- A claimed user need is assumed rather than observed.
+- The change fixes a visible symptom while the goal behind it stays unmet.
+- It adds a step, screen, concept, or choice the user must absorb without a justifying payoff.
+- It trades the builder's convenience for the user's effort.
+- After acting, the user cannot tell what happened or what to do next.
+- The path has a dead end, traps the user, or includes a step some users cannot reach or perceive.
+
+## Surfacing a finding
+
+When the lens surfaces a problem, name it so it can be weighed and acted on, kept separate from any functional pass/fail verdict:
+
+- Lead with the user and the goal, then where the path breaks — not an isolated surface fix.
+- Name the context it sits in: Understanding, Bridging, or Flowing.
+- Weight it by its cost to the goal: it blocks the goal, it degrades the experience, or it is minor friction.
