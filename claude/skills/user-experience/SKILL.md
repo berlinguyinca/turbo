@@ -40,14 +40,12 @@ Trace the path the user takes from end to end.
 
 ## Red flags
 
-Signals that a change has a problem worth raising, across all three contexts:
+A quick scan for symptoms of a problem before forming a verdict:
 
-- A claimed user need is assumed rather than observed.
-- The change fixes a visible symptom while the goal behind it stays unmet.
-- It adds a step, screen, concept, or choice the user must absorb without a justifying payoff.
-- It trades the builder's convenience for the user's effort.
+- A symptom goes away while the goal behind it stays unmet.
+- The user must absorb a new step, screen, or concept the goal did not require.
 - After acting, the user cannot tell what happened or what to do next.
-- The path has a dead end, traps the user, or includes a step some users cannot reach or perceive.
+- The path dead-ends, traps the user, or includes a step some users cannot reach or perceive.
 
 ## Surfacing a finding
 
