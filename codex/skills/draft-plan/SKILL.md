@@ -61,6 +61,7 @@ Ground library and framework choices in current reality before escalating decisi
 
 1. **Scan for matching skills.** Compare the task description against available skill trigger descriptions. For each unambiguous match, run the skill by reading and following the installed skill instructions. This loads decision-level guidance (idiomatic patterns, known pitfalls, version constraints) before product decisions are made. If unsure, do not load.
 2. **Look up library docs.** For libraries or frameworks the task clearly depends on, query documentation MCP tools (or WebSearch as a fallback) when the decision hinges on current library state such as whether a feature exists, which versions support it, or whether an API has been deprecated.
+3. **Load the UX lens for user-facing work.** If the task changes any user-facing surface — UI, screens, commands, messages, or any behavior a user sees or does — run the `$user-experience` skill by reading and following the installed skill instructions to load the UX lens, so escalated product decisions are weighed by their cost to the user's goal and flow. Skip for internal-only work with no user-facing surface.
 
 Keep findings at the decision level: what a library can do, which approach is idiomatic, which version to target. Do not embed specific API signatures or code snippets into the plan. Those belong at execution time, where the same skills are re-loaded.
 

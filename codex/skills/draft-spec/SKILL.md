@@ -50,6 +50,7 @@ Ground architecture and tech-stack choices in current reality before the deep-di
 
 1. **Scan for matching skills.** Compare the vision and opening-question answers against available skill trigger descriptions. For each unambiguous match, run the skill by reading and following the installed skill instructions. This loads decision-level guidance (idiomatic patterns, known pitfalls, version constraints) before architectural choices are made. If unsure, do not load.
 2. **Look up library or framework docs.** For any library, framework, or platform the user mentioned or the project clearly needs, query documentation MCP tools (or WebSearch as a fallback) when the decision hinges on current capabilities, supported versions, or known constraints.
+3. **Load the UX lens for user-facing work.** If the project has any user-facing surface — UI, screens, commands, messages, or any behavior a user sees or does — run the `$user-experience` skill by reading and following the installed skill instructions to load the UX lens, so the deep-dive stays anchored to the user's goal and examines the flow as requirements are gathered. Skip for internal-only work with no user-facing surface.
 
 Keep findings at the decision level: what tools can do, which approaches are idiomatic, which versions to target. Do not embed specific API signatures or code snippets into the spec. Those belong in implementation-time skill loads.
 

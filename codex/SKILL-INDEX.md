@@ -15,8 +15,8 @@ Full listing of skills in the Codex edition of Turbo, grouped by category. Skill
 
 | Skill | What It Does | Uses |
 |---|---|---|
-| [`$draft-plan`](skills/draft-plan/SKILL.md) | Produces a plan at `.turbo/plans/<slug>.md`: guided discussion then draft | [`$survey-patterns`](skills/survey-patterns/SKILL.md) |
-| [`$draft-spec`](skills/draft-spec/SKILL.md) | Guided discussion that produces a spec at `.turbo/specs/<slug>.md` | |
+| [`$draft-plan`](skills/draft-plan/SKILL.md) | Produces a plan at `.turbo/plans/<slug>.md`: guided discussion then draft | [`$survey-patterns`](skills/survey-patterns/SKILL.md), [`$user-experience`](skills/user-experience/SKILL.md) |
+| [`$draft-spec`](skills/draft-spec/SKILL.md) | Guided discussion that produces a spec at `.turbo/specs/<slug>.md` | [`$user-experience`](skills/user-experience/SKILL.md) |
 | [`$draft-shells`](skills/draft-shells/SKILL.md) | Decompose a spec into shells with YAML frontmatter and structured wiring invariants (Produces, Consumes, Covers) | |
 | [`$expand-shell`](skills/expand-shell/SKILL.md) | Expand a shell with fresh pattern survey, concrete references, and verification | [`$survey-patterns`](skills/survey-patterns/SKILL.md) |
 | [`$refine-plan`](skills/refine-plan/SKILL.md) | Iterative review loop over a planning artifact (plan, shells, or spec) until stable: review → evaluate → apply → re-run | [`$review-plan`](skills/review-plan/SKILL.md), [`$evaluate-findings`](skills/evaluate-findings/SKILL.md), [`$apply-findings`](skills/apply-findings/SKILL.md) |
@@ -47,7 +47,7 @@ Full listing of skills in the Codex edition of Turbo, grouped by category. Skill
 |---|---|---|
 | [`$create-test-plan`](skills/create-test-plan/SKILL.md) | Generate a structured test plan at `.turbo/test-plan.md` with four escalating levels | |
 | [`$smoke-test`](skills/smoke-test/SKILL.md) | Launch the app and verify changes manually | `browser-use@openai-bundled` plugin, [`$investigate`](skills/investigate/SKILL.md) |
-| [`$preview`](skills/preview/SKILL.md) | Stand up the live app and hand it to the user to judge a UI/UX change firsthand | |
+| [`$preview`](skills/preview/SKILL.md) | Stand up the live app and hand it to the user to judge a UI/UX change firsthand | [`$user-experience`](skills/user-experience/SKILL.md) |
 | [`$exploratory-test`](skills/exploratory-test/SKILL.md) | Multi-level exploratory testing: basic, complex, adversarial, and cross-cutting scenarios, plus usability observations | [`$create-test-plan`](skills/create-test-plan/SKILL.md), `browser-use@openai-bundled` plugin, [`$investigate`](skills/investigate/SKILL.md), [`$user-experience`](skills/user-experience/SKILL.md) |
 
 ## Dependencies and Tooling

@@ -18,6 +18,8 @@ Resolve what to preview using the first match:
 
 If the resolved scope has no user-visible surface to try (a CLI-only change, a library with no entry point, backend work with no UI to look at), present this message: "Nothing to preview — <one-line reason>." Then use the TaskList tool and proceed to any remaining task.
 
+When there is a surface to preview, run the `/user-experience` skill via the Skill tool to load the UX lens, so what you point the user at and how you weigh their verdict stay anchored to the user's goal and the full path through the change.
+
 ## Step 2: Determine Launch Approach
 
 Check for a project-specific skill or MCP tool that launches the app, and use it if present. Otherwise use the fallback for the surface type:
